@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>UTK Adoption Quiz</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <h1>Welcome to My Website</h1>
+        UT Knoxville Puppy Adoption Quiz
     </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Adoption Quiz</a>
+        <a href="#">Available Puppies</a>
+        <a href="#">Contact</a>
+    </nav>
+
     <main>
-        <p>This is a simple webpage created with HTML, CSS, and JavaScript.</p>
-        <button id="clickMe">Click Me!</button>
+        <section>
+            <h2>Find Your Perfect Pup!</h2>
+            <p>Take our fun quiz to see which puppy is right for you.</p>
+            <button onclick="startQuiz()">Start the Quiz</button>
+        </section>
     </main>
-    <script src="script.js"></script>
+
+    <footer>
+        &copy; 2025 UT Knoxville Puppy Adoption | Created with ❤️ for Volunteers
+    </footer>
+
+    <script>
+        function startQuiz() {
+            alert("Quiz coming soon!");
+        }
+    </script>
+
 </body>
 </html>
