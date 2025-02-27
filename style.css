@@ -1,6 +1,6 @@
 /* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Changed to a more casual, modern font */
     text-align: center;
     margin: 0;
     background-color: #f4f4f4;
@@ -19,6 +19,9 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header p {
@@ -57,6 +60,9 @@ nav a:hover {
     background-position: center;
     padding: 100px 20px;
     color: white;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 10px;
 }
 
 #hero-image h2 {
@@ -143,6 +149,9 @@ footer {
     font-size: 16px;
     border-radius: 10px;
     margin-top: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 footer nav a {
