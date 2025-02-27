@@ -2,19 +2,21 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    background-color: #ffffff; /* UT White */
-    color: #333; /* Darker text for contrast */
+    margin: 50px;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header Section */
+/* Header */
 header {
-    background-color: #f77f00; /* UT Orange */
+    background-color: #f77f00; /* UTK Orange */
     color: white;
     padding: 20px;
-    border-radius: 0 0 10px 10px;
-    font-size: 24px;
+    border-radius: 10px;
+    font-size: 28px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 /* Navigation Bar */
@@ -22,6 +24,8 @@ nav {
     background-color: #333;
     padding: 10px;
     text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 nav a {
@@ -29,36 +33,33 @@ nav a {
     text-decoration: none;
     font-size: 18px;
     margin: 0 15px;
-    padding: 8px 12px;
+    padding: 10px 15px;
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
 }
 
 nav a:hover {
-    background-color: #f77f00; /* UT Orange */
+    background-color: #f77f00; /* UTK Orange */
 }
 
-/* Main Content Area */
-main {
-    padding: 30px;
-}
-
+/* Content Sections */
 section {
-    margin: 20px auto;
+    background: white;
     padding: 20px;
-    max-width: 800px;
-    background: #f4f4f4;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    border-left: 5px solid #f77f00; /* UTK Orange accent */
 }
 
 /* Buttons */
 button {
-    padding: 12px 24px;
-    font-size: 18px;
+    padding: 10px 20px;
+    font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
-    background-color: #f77f00; /* UT Orange */
+    background-color: #f77f00; /* UTK Orange */
     border: none;
     color: white;
     border-radius: 5px;
@@ -66,7 +67,7 @@ button {
 }
 
 button:hover {
-    background-color: #c45d00; /* Darker shade of UT Orange */
+    background-color: #c45d00; /* Darker UTK Orange */
     transform: scale(1.05);
 }
 
@@ -77,5 +78,5 @@ footer {
     padding: 15px;
     margin-top: 20px;
     font-size: 14px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
 }
