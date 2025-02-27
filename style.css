@@ -1,166 +1,212 @@
-/* General Page Styling */
-body {
-    font-family: 'Poppins', sans-serif; /* Changed to a more casual, modern font */
-    text-align: center;
+/* Resetting some defaults */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 60px; /* To offset the fixed navbar */
 }
 
-/* Header */
-header {
-    background-color: #f77f00; /* UTK Orange */
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
-    font-size: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
+/* Container Class */
+.container {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header p {
-    font-size: 20px;
-    margin-top: 10px;
+    margin: 0 auto;
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #333;
+    background-color: #f77f00; /* UTK Orange */
+    color: white;
     padding: 15px 0;
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
     z-index: 100;
 }
 
-nav a {
+nav .logo {
+    font-size: 24px;
+    font-weight: 600;
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    margin: 0 20px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s ease-in-out;
 }
 
-nav a:hover {
-    background-color: #f77f00; /* UTK Orange */
+nav .nav-links {
+    float: right;
 }
 
-/* Hero Image Section */
-#hero-image {
-    background-image: url('https://via.placeholder.com/1500x600.png?text=Dog+Adoption');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
+nav .nav-links a {
     color: white;
-    width: 80%;
-    margin: 40px auto;
-    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-#hero-image h2 {
+nav .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #f77f00; /* UTK Orange */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#hero h1 {
     font-size: 48px;
     font-weight: bold;
-}
-
-#hero-image p {
-    font-size: 24px;
     margin-bottom: 20px;
 }
 
-#hero-image button {
-    padding: 15px 40px;
-    background-color: #f77f00; /* UTK Orange */
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+#hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
-#hero-image button:hover {
-    background-color: #c45d00; /* Darker UTK Orange */
+#hero button {
+    padding: 15px 40px;
+    background-color: #fff;
+    color: #f77f00;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#hero button:hover {
+    background-color: #ff7c00;
 }
 
 /* Why Adopt Section */
 #why-adopt {
-    background: white;
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 900px;
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
     border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#why-adopt h2 {
+    font-size: 36px;
+    color: #f77f00;
+    margin-bottom: 20px;
+}
+
+#why-adopt p {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Featured Dogs Section */
+#adoptable-dogs {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+#adoptable-dogs h2 {
+    font-size: 36px;
+    color: #f77f00;
+    margin-bottom: 20px;
+}
+
+.dogs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.dog-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-left: 5px solid #f77f00; /* UTK Orange accent */
+    text-align: center;
+}
+
+.dog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.dog-card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.dog-card p {
+    font-size: 18px;
+    color: #555;
 }
 
 /* Adoption Stats Section */
 #adoption-stats {
-    background: #fff7e6;
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 900px;
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 
 #adoption-stats h2 {
-    font-size: 28px;
-    color: #333;
+    font-size: 36px;
+    color: #f77f00;
+    margin-bottom: 20px;
 }
 
 #adoption-stats ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 #adoption-stats li {
-    font-size: 18px;
+    font-size: 20px;
+    color: #555;
     margin-bottom: 10px;
 }
 
 /* Testimonials Section */
 #testimonials {
-    background: #f1f1f1;
-    padding: 40px;
-    margin: 30px auto;
-    max-width: 900px;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
     border-radius: 10px;
-    font-style: italic;
+    margin-bottom: 40px;
+}
+
+#testimonials h2 {
+    font-size: 36px;
+    color: #f77f00;
+    margin-bottom: 20px;
 }
 
 #testimonials blockquote {
     font-size: 20px;
     color: #555;
-    margin: 15px 0;
+    font-style: italic;
+    margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
-    font-size: 16px;
+    padding: 20px 0;
+    text-align: center;
     border-radius: 10px;
     margin-top: 40px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-footer nav a {
-    color: white;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer nav a:hover {
-    text-decoration: underline;
-}
+footer na
