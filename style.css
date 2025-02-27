@@ -1,6 +1,5 @@
 /* style.css */
 
-/* Reset some default styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -8,32 +7,31 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     font-family: sans-serif;
-    background-color: #f8f8f8; /* Light gray background */
+    background-color: #f8f8f8;
     color: #333;
+    text-align: center; /* Center all text by default */
 }
 
 header {
-    background-color: #ff9800; /* Orange header */
+    background-color: #ff9800;
     color: white;
-    text-align: center;
     padding: 20px 0;
 }
 
 nav {
-    background-color: #ffb74d; /* Lighter orange nav */
+    background-color: #ffb74d;
     padding: 10px 0;
-    text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px; /* rounded corners*/
+    border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: #ffa726; /* Slightly darker orange on hover */
+    background-color: #ffa726;
 }
 
 .main-content {
@@ -65,16 +63,31 @@ nav a:hover {
 footer {
     background-color: #ff9800;
     color: white;
-    text-align: center;
     padding: 10px 0;
+}
+
+.boxed-section {
+    border: 2px solid #ddd; /* Add a light gray border */
+    padding: 20px; /* Add some padding inside the box */
+    margin: 20px auto; /* Center the box */
+    max-width: 700px; /* Limit the width of the box */
+    box-sizing: border-box; /* Include border and padding in width/height calculations */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points from lists */
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px; /* Add space between list items */
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     nav a {
-        display: block; /* Stack links on smaller screens */
+        display: block;
         width: 100%;
-        text-align: center;
         margin-bottom: 5px;
     }
 }
