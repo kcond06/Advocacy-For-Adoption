@@ -50,7 +50,7 @@ nav a:hover {
 
 .dog-image {
     width: 100%;
-    max-height: 400px;
+    max-height: 125px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 15px;
