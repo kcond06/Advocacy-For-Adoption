@@ -3,47 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Knoxville Dog Adoptions</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>AdoptKnoxDogs - Adopt, Don't Shop!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Light gray background */
+            color: #333;
+        }
+
+        header {
+            background-color: #ff9800; /* Orange header */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #ffb74d; /* Lighter orange nav */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #ffa726; /* Slightly darker orange on hover */
+        }
+
+        .main-content {
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .dog-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #ff9800;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <nav>
-            <h1>Knoxville Dog Adoptions</h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#adopt">Adopt</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>AdoptKnoxDogs</h1>
+        <p>Giving Knoxville's Furry Friends a Forever Home</p>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Adopt a Dog, Change a Life!</h2>
-            <p>Your new best friend is waiting at a shelter near you.</p>
-            <a href="#adopt" class="btn">See Available Dogs</a>
-        </div>
-    </section>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#adopt">Adoptable Dogs</a>
+        <a href="#shelters">Local Shelters</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <section id="adopt" class="adoption">
-        <h2>Available Dogs</h2>
-        <div class="dog-list">
-            <div class="dog">
-                <img src="dog1.jpg" alt="Dog 1">
-                <p>Max - Friendly and Energetic</p>
+    <main class="main-content">
+        <section id="about">
+            <h2>About AdoptKnoxDogs</h2>
+            <p>We're a dedicated team of volunteers passionate about finding loving homes for dogs in Knoxville's animal shelters. Our mission is to raise awareness about the importance of adoption and support local shelters in their efforts to care for and rehome these wonderful animals.</p>
+            <p>We believe every dog deserves a second chance, and we're here to help make that happen.</p>
+        </section>
+
+        <section id="adopt">
+            <h2>Meet Our Adoptable Dogs</h2>
+            <div class="dog-listing">
+                <img src="placeholder-dog.jpg" alt="Adoptable Dog" class="dog-image">
+                <h3>Buddy</h3>
+                <p>A friendly and playful 2-year-old Lab mix. Loves walks and belly rubs!</p>
+                <p><strong>Shelter:</strong> Knox County Animal Shelter</p>
                 <a href="#">Learn More</a>
             </div>
-            <div class="dog">
-                <img src="dog2.jpg" alt="Dog 2">
-                <p>Bella - Calm and Loving</p>
+            <div class="dog-listing">
+                <img src="placeholder-dog2.jpg" alt="Adoptable Dog" class="dog-image">
+                <h3>Daisy</h3>
+                <p>A sweet and gentle 4-year-old Beagle. Great with kids and other dogs.</p>
+                <p><strong>Shelter:</strong> Young-Williams Animal Center</p>
                 <a href="#">Learn More</a>
             </div>
-        </div>
-    </section>
+            <p>*(Replace placeholder-dog.jpg and placeholder-dog2.jpg with actual dog images, and add more dog listings)*</p>
+        </section>
 
-    <footer id="contact">
-        <p>Contact us at: info@knoxdogadoptions.com</p>
+        <section id="shelters">
+            <h2>Local Shelters</h2>
+            <ul>
+                <li><a href="#">Knox County Animal Shelter</a></li>
+                <li><a href="#">Young-Williams Animal Center</a></li>
+                <li><a href="#">Humane Society of Tennessee Valley</a></li>
+                <li><a href="#">And many more...</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: adoptknoxdogs@example.com</p>
+            <p>Follow us on social media:</p>
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AdoptKnoxDogs</p>
     </footer>
+
 </body>
 </html>
