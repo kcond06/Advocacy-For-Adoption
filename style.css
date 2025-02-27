@@ -1,24 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcc99; /* light orange background */
+    color: #333;
+    text-align: center; /* Centering all text */
 }
 
 header {
-    background-color: #ff7f50; /* orange */
+    background-color: #ff7f50; /* dark orange */
     padding: 20px;
-    text-align: center;
 }
 
 header h1 {
-    margin: 0;
     color: white;
+    font-size: 2.5em;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -29,50 +35,63 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 .hero {
-    background-color: #ffcc99;
-    text-align: center;
-    padding: 50px 0;
+    background-color: #ff7f50; /* orange */
+    color: white;
+    padding: 80px 20px; /* More padding for a bigger hero section */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero h2 {
-    margin: 0;
-    color: #333;
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    color: #666;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .btn {
-    background-color: #ff7f50;
-    color: white;
+    background-color: white;
+    color: #ff7f50;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1.2em;
 }
 
 .adoption {
-    padding: 50px;
-    background-color: #ffffff;
+    background-color: #fff4e1; /* soft peach background */
+    padding: 50px 20px;
+}
+
+.adoption h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .dog-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .dog {
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 200px;
     background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .dog img {
@@ -82,8 +101,14 @@ nav ul li a {
 }
 
 footer {
-    background-color: #ff7f50;
+    background-color: #ff7f50; /* matching orange */
     color: white;
-    text-align: center;
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1.1em;
 }
