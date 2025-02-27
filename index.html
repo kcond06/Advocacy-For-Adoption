@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <header>
-    <h1>Advocacy for Knoxville Animal Adoption</h1>
-    <p>Every year, hundreds of loving pets at <strong>Young-Williams Animal Shelter</strong> wait for their forever home. 
-    Our mission is to connect these animals with caring families and raise awareness about the importance of adoption.</p>
-</header>
-    <section id="adoptable-pets">
-    <h2>Find Your New Best Friend</h2>
-    <p>Click below to view adoptable pets from Young-Williams Animal Shelter.</p>
-    <a href="https://www.young-williams.org/adopt/" target="_blank" class="btn">View Adoptable Pets</a>
-        <section id="success-stories">
-</section>
+    <title>Puppy Adoption Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome To Adopt Knox Dogs</h1>
-    </header>
-    <main>
-        <button id="clickMe">Click Me!</button>
-    </main>
+    <div class="quiz-container">
+        <h1>Puppy Adoption Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>How much time can you dedicate to walking your dog every day?</p>
+                <label><input type="radio" name="question1" value="1"> Less than 30 minutes</label><br>
+                <label><input type="radio" name="question1" value="2"> 30 minutes to an hour</label><br>
+                <label><input type="radio" name="question1" value="3"> More than an hour</label>
+            </div>
+            <div class="question">
+                <p>How do you feel about grooming?</p>
+                <label><input type="radio" name="question2" value="1"> I want a low-maintenance coat</label><br>
+                <label><input type="radio" name="question2" value="2"> I'm okay with occasional grooming</label><br>
+                <label><input type="radio" name="question2" value="3"> I don’t mind grooming regularly</label>
+            </div>
+            <div class="question">
+                <p>Do you have kids or other pets at home?</p>
+                <label><input type="radio" name="question3" value="1"> Yes, young kids and/or pets</label><br>
+                <label><input type="radio" name="question3" value="2"> Yes, but only adults</label><br>
+                <label><input type="radio" name="question3" value="3"> No kids or pets</label>
+            </div>
+            <button type="button" onclick="calculateResults()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
