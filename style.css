@@ -9,7 +9,10 @@ body {
     font-family: sans-serif;
     background-color: #f8f8f8;
     color: #333;
-    text-align: center; /* Center all text by default */
+}
+
+header, nav, .main-content, footer { /* Apply text-align to container elements */
+    text-align: center;
 }
 
 header {
@@ -67,20 +70,20 @@ footer {
 }
 
 .boxed-section {
-    border: 2px solid #ddd; /* Add a light gray border */
-    padding: 20px; /* Add some padding inside the box */
-    margin: 20px auto; /* Center the box */
-    max-width: 700px; /* Limit the width of the box */
-    box-sizing: border-box; /* Include border and padding in width/height calculations */
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    box-sizing: border-box;
 }
 
 ul {
-    list-style-type: none; /* Remove bullet points from lists */
+    list-style-type: none;
     padding: 0;
 }
 
 ul li {
-    margin-bottom: 10px; /* Add space between list items */
+    margin-bottom: 10px;
 }
 
 /* Responsive Design */
