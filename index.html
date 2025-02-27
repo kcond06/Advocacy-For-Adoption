@@ -4,60 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adopt Knox Dogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Adopt Knox Dogs</h1>
-        <p>Your new best friend is waiting!</p>
-    </header>
-
     <!-- Navigation Bar -->
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Adoptable Dogs</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact</a>
+        <div class="container">
+            <a href="#" class="logo">Adopt Knox Dogs</a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Adoptable Dogs</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
     </nav>
 
-    <!-- Hero Image Section -->
-    <section id="hero-image">
-        <h2>Find Your Perfect Companion Today</h2>
-        <p>We connect caring families with adoptable dogs in Knoxville!</p>
-        <button>Browse Adoptable Dogs</button>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <h1>Find Your Best Friend Today</h1>
+            <p>Adopt a loving companion from Young-Williams Animal Shelter</p>
+            <button onclick="window.location.href='#adoptable-dogs';">Browse Adoptable Dogs</button>
+        </div>
     </section>
 
     <!-- Why Adopt Section -->
     <section id="why-adopt">
-        <h2>Why Adopt?</h2>
-        <p>Adopting a dog from Young-Williams Animal Shelter gives them a second chance at a loving home. By adopting, you change their lives forever!</p>
+        <div class="container">
+            <h2>Why Adopt?</h2>
+            <p>Adopting a dog is a life-changing experience—for you and for the dog! Your adoption helps reduce the number of animals in shelters and gives them a loving home.</p>
+        </div>
     </section>
 
-    <!-- Dog Adoption Stats Section -->
+    <!-- Featured Dogs Section -->
+    <section id="adoptable-dogs">
+        <div class="container">
+            <h2>Featured Adoptable Dogs</h2>
+            <div class="dogs">
+                <div class="dog-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Dog+1" alt="Dog 1">
+                    <h3>Max</h3>
+                    <p>Golden Retriever, 2 years old</p>
+                </div>
+                <div class="dog-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Dog+2" alt="Dog 2">
+                    <h3>Buddy</h3>
+                    <p>Beagle, 3 years old</p>
+                </div>
+                <div class="dog-card">
+                    <img src="https://via.placeholder.com/300x200.png?text=Dog+3" alt="Dog 3">
+                    <h3>Bella</h3>
+                    <p>Labrador Retriever, 1 year old</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Stats Section -->
     <section id="adoption-stats">
-        <h2>Adoption Stats</h2>
-        <ul>
-            <li><strong>67%</strong> of shelter dogs are adopted into loving homes every year.</li>
-            <li><strong>50,000+</strong> pets find homes annually in Tennessee alone.</li>
-            <li><strong>Over 7 million</strong> animals enter shelters each year across the U.S.</li>
-        </ul>
+        <div class="container">
+            <h2>Adoption Stats</h2>
+            <ul>
+                <li><strong>67%</strong> of shelter dogs are adopted annually.</li>
+                <li><strong>50,000+</strong> pets find homes every year in Tennessee.</li>
+                <li><strong>Over 7 million</strong> pets enter shelters each year across the U.S.</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials">
-        <h2>What Our Adopters Say</h2>
-        <blockquote>"Adopting my dog from Knox Shelter was the best decision. He's family now!" - Jane Doe</blockquote>
-        <blockquote>"Thank you for making the process so easy. I love my new furry friend!" - John Smith</blockquote>
+        <div class="container">
+            <h2>What Our Adopters Say</h2>
+            <blockquote>"Adopting my dog was the best decision. He's family now!" – Jane Doe</blockquote>
+            <blockquote>"We love our new pup. Thank you for making adoption so easy!" – John Smith</blockquote>
+        </div>
     </section>
 
-    <!-- Footer with Useful Links -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Adopt Knox Dogs. All rights reserved.</p>
-        <nav>
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-        </nav>
+        <div class="container">
+            <p>&copy; 2025 Adopt Knox Dogs. All rights reserved.</p>
+            <nav>
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </nav>
+        </div>
     </footer>
 
 </body>
