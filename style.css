@@ -9,10 +9,7 @@ body {
     font-family: sans-serif;
     background-color: #f8f8f8;
     color: #333;
-}
-
-header, nav, .main-content, footer {
-    text-align: center;
+    text-align: center; /* Center text in the body */
 }
 
 header {
@@ -70,8 +67,8 @@ footer {
 }
 
 .orange-section {
-    border: 2px solid #ff9800; /* Orange border */
-    background-color: #ffe0b2;/*light orange fill*/
+    border: 2px solid #ff9800;
+    background-color: #ffe0b2;
     padding: 20px;
     margin: 20px auto;
     max-width: 700px;
