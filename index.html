@@ -4,67 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdoptKnoxDogs - Adopt, Don't Shop!</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8; /* Light gray background */
-            color: #333;
-        }
-
-        header {
-            background-color: #ff9800; /* Orange header */
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        nav {
-            background-color: #ffb74d; /* Lighter orange nav */
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-
-        nav a:hover {
-            background-color: #ffa726; /* Slightly darker orange on hover */
-        }
-
-        .main-content {
-            padding: 20px;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-
-        .section {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .dog-image {
-            width: 100%;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-        footer {
-            background-color: #ff9800;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -93,14 +33,14 @@
                 <img src="placeholder-dog.jpg" alt="Adoptable Dog" class="dog-image">
                 <h3>Buddy</h3>
                 <p>A friendly and playful 2-year-old Lab mix. Loves walks and belly rubs!</p>
-                <p><strong>Shelter:</strong> Knox County Animal Shelter</p>
+                <p><strong>Shelter:</strong> <a href="https://www.knoxcounty.org/animal/adoption.php" target="_blank">Knox County Animal Shelter</a></p>
                 <a href="#">Learn More</a>
             </div>
             <div class="dog-listing">
                 <img src="placeholder-dog2.jpg" alt="Adoptable Dog" class="dog-image">
                 <h3>Daisy</h3>
                 <p>A sweet and gentle 4-year-old Beagle. Great with kids and other dogs.</p>
-                <p><strong>Shelter:</strong> Young-Williams Animal Center</p>
+                <p><strong>Shelter:</strong> <a href="https://www.young-williams.org/adopt/" target="_blank">Young-Williams Animal Center</a></p>
                 <a href="#">Learn More</a>
             </div>
             <p>*(Replace placeholder-dog.jpg and placeholder-dog2.jpg with actual dog images, and add more dog listings)*</p>
@@ -109,11 +49,13 @@
         <section id="shelters">
             <h2>Local Shelters</h2>
             <ul>
-                <li><a href="#">Knox County Animal Shelter</a></li>
-                <li><a href="#">Young-Williams Animal Center</a></li>
-                <li><a href="#">Humane Society of Tennessee Valley</a></li>
-                <li><a href="#">And many more...</a></li>
-            </ul>
+                <li><a href="https://www.knoxcounty.org/animal/adoption.php" target="_blank">Knox County Animal Shelter</a></li>
+                <li><a href="https://www.young-williams.org/adopt/" target="_blank">Young-Williams Animal Center</a></li>
+                <li><a href="https://humanesocietytennessee.org/adopt/" target="_blank">Humane Society of Tennessee Valley</a></li>
+                <li><a href="https://www.petfinder.com/search/dogs-for-adoption/us/tn/knoxville/" target="_blank">Petfinder (Knoxville Dogs)</a></li>
+                <li><a href="https://www.adoptapet.com/adoption-search?zipcode=37917&miles=25&species=Dog" target="_blank">Adopt a Pet (Knoxville Dogs)</a></li>
+                <li><a href="https://www.lostandfoundpetsofknoxville.com/adoptions" target="_blank">Lost and Found Pets of Knoxville</a></li>
+                </ul>
         </section>
 
         <section id="contact">
@@ -128,5 +70,6 @@
         <p>&copy; 2024 AdoptKnoxDogs</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
