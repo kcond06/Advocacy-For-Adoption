@@ -6,8 +6,8 @@ body, h1, h2, h3, p, ul, li {
 }
 
 body {
-    font-family: Comic Sans;
-    background-color: #bfbaba;
+    font-family: Times New Roman;
+    background-color: #e8e8e8;
     color: #333;
     text-align: center; /* Center text in the body */
 }
