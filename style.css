@@ -113,17 +113,18 @@ footer {
 
 /* Team Section Styles */
 #team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
 .team-member {
-    display: inline-block;
     width: 300px;
     margin: 20px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    vertical-align: top;
     background-color: white;
 }
 
