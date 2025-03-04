@@ -103,10 +103,17 @@ ul li {
 
 #shelters ul {
     margin-top: 10px; /* Optional: Adjusts spacing above the list */
+#contact h2 {
+    margin-bottom: 20px; /* Adjust the value to increase/decrease space */
 }
-#shelters h2,
-#contact h2,
+
+#contact ul {
+    margin-top: 10px; /* Optional: Adjusts spacing above the list */
 #about h2 {
-    margin-bottom: 20px; /* Increase spacing between title and content */
+    margin-bottom: 20px; /* Adjust the value to increase/decrease space */
 }
+
+#about ul {
+    margin-top: 10px; /* Optional: Adjusts spacing above the list */
+
 
