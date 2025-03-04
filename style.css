@@ -113,11 +113,13 @@ footer {
 
 /* Team Section Styles */
 #team {
+    text-align: center;
+}
+
+.team-members-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    text-align: center;
-    align-items: flex-start; /* Added this line */
 }
 
 .team-member {
@@ -126,7 +128,7 @@ footer {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: black;
+    background-color: white; /* Changed from black to white */
 }
 
 .team-member-image {
