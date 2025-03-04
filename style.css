@@ -44,20 +44,22 @@ nav a:hover {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 8px; /* Rounded corners for all sections */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .dog-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for dog images */
     margin-bottom: 15px;
 }
 
 .dog-listing {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for dog listings */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -73,6 +75,7 @@ footer {
     margin: 20px auto;
     max-width: 700px;
     box-sizing: border-box;
+    border-radius: 15px; /* Rounded corners for orange sections */
 }
 
 ul {
@@ -92,29 +95,15 @@ ul li {
         margin-bottom: 5px;
     }
 }
-.dog-image {
-    width: 300px; /* Adjust width as needed */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-}
-#shelters h2 {
-    margin-bottom: 20px; /* Adjust the value to increase/decrease space */
+
+#shelters h2, #contact h2, #about h2 {
+    margin-bottom: 20px;
 }
 
-#shelters ul {
-    margin-top: 10px; /* Optional: Adjusts spacing above the list */
-#contact h2 {
-    margin-bottom: 20px; /* Adjust the value to increase/decrease space */
+#shelters ul, #contact ul, #about ul {
+    margin-top: 10px;
 }
 
-#contact ul {
-    margin-top: 10px; /* Optional: Adjusts spacing above the list */
-#about h2 {
-    margin-bottom: 20px; /* Adjust the value to increase/decrease space */
-}
-
-#about ul {
-    margin-top: 10px; /* Optional: Adjusts spacing above the list */
 header h1 {
     margin-bottom: 10px;
 }
@@ -122,12 +111,3 @@ header h1 {
 nav {
     margin-bottom: 20px;
 }
-
-.dog-listing {
-    margin-bottom: 30px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
