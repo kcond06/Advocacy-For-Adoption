@@ -104,3 +104,8 @@ ul li {
 #shelters ul {
     margin-top: 10px; /* Optional: Adjusts spacing above the list */
 }
+#shelters h2,
+#contact h2,
+#about h2 {
+    margin-bottom: 15px; /* Adjust as needed */
+}
