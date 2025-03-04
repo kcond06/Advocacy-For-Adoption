@@ -1,5 +1,6 @@
 /* style.css */
 
+/* Reset and Base Styles */
 body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
@@ -9,18 +10,33 @@ body {
     font-family: Playfair Display;
     background-color: #e8e8e8;
     color: #333;
-    text-align: center; /* Center text in the body */
+    text-align: center;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Header and Navigation */
 header {
     background-color: #ff9800;
     color: white;
     padding: 20px 0;
 }
 
+header h1 {
+    margin-bottom: 10px;
+}
+
 nav {
     background-color: #bfbaba;
     padding: 10px 0;
+    margin-bottom: 20px;
 }
 
 nav a {
@@ -34,6 +50,7 @@ nav a:hover {
     background-color: #bfbaba;
 }
 
+/* Main Content and Sections */
 .main-content {
     padding: 20px;
     max-width: 800px;
@@ -44,33 +61,9 @@ nav a:hover {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px; /* Rounded corners for all sections */
+    border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.dog-image {
-    width: 300px;
-    height: auto;
-    border-radius: 10px; /* Rounded corners for dog images */
-    margin-bottom: 15px;
-}
-
-.dog-listing {
-    margin-bottom: 30px;
-    padding: 15px;
-    border-radius: 8px; /* Rounded corners for dog listings */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    background-color: #ff9800;
-    color: white;
-    padding: 10px 0;
-}
-
-/* style.css */
-
-/* ... other styles ... */
 
 .orange-section {
     border: 2px solid #ff9800;
@@ -79,19 +72,43 @@ footer {
     margin: 20px auto;
     max-width: 700px;
     box-sizing: border-box;
-    border-radius: 15px;  /* This is the rule that should be rounding the corners */
+    border-radius: 15px;
 }
 
-/* ... other styles ... */
+/* Dog Specific Styles */
+.dog-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
-ul {
+.dog-listing {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Section Heading and List Spacing */
+#shelters h2, #contact h2, #about h2 {
+    margin-bottom: 20px;
+}
+
+#shelters ul, #contact ul, #about ul {
+    margin-top: 10px;
+}
+
+/* Local Shelters Specific */
+#shelters ul {
     list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
 }
 
 /* Responsive Design */
@@ -101,24 +118,4 @@ ul li {
         width: 100%;
         margin-bottom: 5px;
     }
-}
-
-#shelters h2, #contact h2, #about h2 {
-    margin-bottom: 20px;
-}
-
-#shelters ul, #contact ul, #about ul {
-    margin-top: 10px;
-}
-
-header h1 {
-    margin-bottom: 10px;
-}
-
-nav {
-    margin-bottom: 20px;
-}
-#shelters ul {
-    list-style-type: none; /* Removes bullet points */
-    padding: 0; /* Optional: Removes default padding */
 }
