@@ -97,3 +97,10 @@ ul li {
     height: auto; /* Maintains aspect ratio */
     border-radius: 10px; /* Optional: Adds rounded corners */
 }
+#shelters h2 {
+    margin-bottom: 20px; /* Adjust the value to increase/decrease space */
+}
+
+#shelters ul {
+    margin-top: 10px; /* Optional: Adjusts spacing above the list */
+}
