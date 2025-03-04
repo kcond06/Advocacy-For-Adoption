@@ -115,5 +115,19 @@ ul li {
 
 #about ul {
     margin-top: 10px; /* Optional: Adjusts spacing above the list */
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.dog-listing {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
 
