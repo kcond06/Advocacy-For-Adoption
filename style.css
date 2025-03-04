@@ -68,6 +68,10 @@ footer {
     padding: 10px 0;
 }
 
+/* style.css */
+
+/* ... other styles ... */
+
 .orange-section {
     border: 2px solid #ff9800;
     background-color: #ffe0b2;
@@ -75,7 +79,10 @@ footer {
     margin: 20px auto;
     max-width: 700px;
     box-sizing: border-box;
-    border-radius: 15px; /* Rounded corners for orange sections */
+    border-radius: 15px;  /* This is the rule that should be rounding the corners */
+}
+
+/* ... other styles ... */
 }
 
 ul {
