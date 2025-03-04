@@ -117,6 +117,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    align-items: flex-start; /* Added this line */
 }
 
 .team-member {
