@@ -123,12 +123,15 @@ footer {
 }
 
 .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 300px;
     margin: 20px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: white; /* Changed from black to white */
+    background-color: white;
 }
 
 .team-member-image {
