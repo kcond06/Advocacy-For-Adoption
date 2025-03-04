@@ -134,6 +134,14 @@ footer {
     background-color: #ff9800;
 }
 
+.team-member h3 {
+    color: #ffffff; /* Change color of team member names to black */
+}
+
+.team-member p {
+    color: #333; /* Change color of titles and descriptions to dark gray */
+}
+
 .team-member-image {
     width: 150px;
     height: 150px;
