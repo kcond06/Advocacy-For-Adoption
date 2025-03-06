@@ -13,7 +13,7 @@ body {
     text-align: center;
     background-image: url('images/PawPrint.png');
     background-repeat: repeat;
-    background-position: -20% 0;
+    background-position: 10% 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,8 @@ nav a:hover {
     max-width: 700px;
     box-sizing: border-box;
     border-radius: 15px;
-    text-align: left; /* Added to prevent centering */
+    text-align: left;
+    width: 100%; /* Added to take full width of parent */
 }
 
 /* Dog Specific Styles */
@@ -167,9 +168,9 @@ footer {
     border-radius: 8px;
     text-align: center;
     margin-bottom: 20px;
-    width: fit-content; /* Fit content to link width */
-    margin-left: auto; /* Center horizontally */
-    margin-right: auto; /* Center horizontally */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .quiz-link-box a {
