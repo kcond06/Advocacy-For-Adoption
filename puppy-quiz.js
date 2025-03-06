@@ -43,6 +43,3 @@ document.getElementById('puppy-quiz').addEventListener('submit', function(event)
     document.getElementById('quiz-results').innerHTML = `
         <h2>Your Perfect Puppy Match!</h2>
         <p>${result}</p>
-        <button onclick="window.location.href='adopt.html'">Back to Adoption Page</button>
-    `;
-});
