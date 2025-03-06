@@ -23,10 +23,18 @@
     <main class="main-content">
         <section id="contact" class="orange-section">
             <h2>Contact Us</h2>
-            <p>Email: adoptknoxdogs@gmail.com</p>
-            <p>Follow us on social media:</p>
-            <a href="https://www.instagram.com/adoptknoxdogs/" target="_blank">Instagram</a>
-            <a href="https://www.tiktok.com/adoptknoxdogs/" target="_blank">Tiktok</a>
+            <form action="/submit-contact-form" method="post">
+                <input type="text" name="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" placeholder="Your Email" required><br>
+                <input type="text" name="subject" placeholder="Subject"><br>
+                <textarea name="message" placeholder="Your Message" required></textarea><br>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Main Street, Knoxville, TN 37901</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/adoptknoxdogs/" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+            </div>
         </section>
     </main>
 
