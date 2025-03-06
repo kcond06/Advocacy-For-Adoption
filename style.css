@@ -11,10 +11,10 @@ body {
     background-color: #e8e8e8;
     color: #333;
     text-align: center;
-    background-image: url('images/PawPrint.png'); /* Add pawprint background */
+    background-image: url('images/PawPrint.png');
     background-repeat: repeat;
-    background-position: -25% 0;
-    min-height: 100vh; /* Set minimum height to viewport height */
+    background-position: 10% 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -61,7 +61,7 @@ nav a:hover {
     padding: 20px;
     max-width: 800px;
     margin: 20px auto;
-    flex: 1; /* Allow main content to grow */
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -82,6 +82,7 @@ nav a:hover {
     max-width: 700px;
     box-sizing: border-box;
     border-radius: 15px;
+    text-align: left; /* Added to prevent centering */
 }
 
 /* Dog Specific Styles */
@@ -159,20 +160,24 @@ footer {
         margin-bottom: 5px;
     }
 }
+
 .quiz-link-box {
-    background-color: #ff9800; /* Or any color you prefer */
+    background-color: #ff9800;
     padding: 15px 20px;
     border-radius: 8px;
     text-align: center;
     margin-bottom: 20px;
+    width: fit-content; /* Fit content to link width */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
 }
 
 .quiz-link-box a {
     color: white;
     text-decoration: none;
-    font-size: 18px; /* Adjust size as needed */
+    font-size: 18px;
 }
 
 .quiz-link-box a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
+    text-decoration: underline;
 }
