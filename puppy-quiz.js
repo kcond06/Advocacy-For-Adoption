@@ -2,6 +2,7 @@
 
 document.getElementById('puppy-quiz').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form submission
+    console.log("Form submitted");
 
     // Get answers
     const walks = document.querySelector('input[name="walks"]:checked')?.value;
@@ -40,6 +41,14 @@ document.getElementById('puppy-quiz').addEventListener('submit', function(event)
     }
 
     // Display results
-    document.getElementById('quiz-results').innerHTML = `
-        <h2>Your Perfect Puppy Match!</h2>
-        <p>${result}</p>
+    const resultsDiv = document.getElementById('quiz-results');
+    if (resultsDiv) {
+        resultsDiv.innerHTML = `
+            <h2>Your Perfect Puppy Match!</h2>
+            <p>${result}</p>
+            <button onclick="window.location.href='adopt.html'">Back to Adoption Page</button>
+        `;
+    } else {
+        console.error("quiz-results element not found!");
+    }
+});
