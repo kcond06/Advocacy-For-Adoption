@@ -182,6 +182,8 @@ footer {
 .quiz-link-box a:hover {
     text-decoration: underline;
 }
+
+/* Shelter Specific Styles */
 .shelter-image {
     width: 300px;
     height: auto;
