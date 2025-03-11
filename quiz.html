@@ -3,57 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Which Puppy Is Right For You?</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="quiz.css">
+    <title>Test Quiz</title>
 </head>
 <body>
-    <header>
-        <h1>Which Puppy Is Right For You?</h1>
-        <p>Take this quiz to find your perfect furry companion!</p>
-    </header>
-    <main>
-        <form id="puppy-quiz">
-            <div class="question">
-                <p>1. How much time do you have for daily walks?</p>
-                <label><input type="radio" name="walks" value="short"> Short (30 minutes or less)</label><br>
-                <label><input type="radio" name="walks" value="medium"> Medium (30-60 minutes)</label><br>
-                <label><input type="radio" name="walks" value="long"> Long (60+ minutes)</label><br>
-            </div>
-
-            <div class="question">
-                <p>2. Do you prefer a small, medium, or large dog?</p>
-                <label><input type="radio" name="size" value="small"> Small</label><br>
-                <label><input type="radio" name="size" value="medium"> Medium</label><br>
-                <label><input type="radio" name="size" value="large"> Large</label><br>
-            </div>
-
-            <div class="question">
-                <p>3. Do you have children or other pets?</p>
-                <label><input type="radio" name="pets" value="yes"> Yes</label><br>
-                <label><input type="radio" name="pets" value="no"> No</label><br>
-            </div>
-
-            <div class="question">
-                <p>4. What is your living situation?</p>
-                <label><input type="radio" name="living" value="apartment"> Apartment</label><br>
-                <label><input type="radio" name="living" value="house"> House with a yard</label><br>
-            </div>
-
-            <div class="question">
-                <p>5. How much experience do you have with dogs?</p>
-                <label><input type="radio" name="experience" value="none"> None</label><br>
-                <label><input type="radio" name="experience" value="some"> Some</label><br>
-                <label><input type="radio" name="experience" value="lots"> Lots</label><br>
-            </div>
-
-            <button type="submit">Get Results</button>
-        </form>
-
-        <div id="quiz-results">
-        </div>
-    </main>
-
-    <script src="puppy-quiz.js"></script>
+    <form id="test-quiz">
+        <button type="submit">Test</button>
+    </form>
+    <div id="test-results"></div>
+    <script>
+        document.getElementById('test-quiz').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('test-results').innerHTML = "<p>Test successful!</p>";
+        });
+    </script>
 </body>
 </html>
