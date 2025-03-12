@@ -16,16 +16,17 @@
         <form id="puppy-quiz">
             <div class="question">
                 <p>1. How much time do you have for daily walks?</p>
-                <label><input type="radio" name="walks" value="short"> Short (30 minutes or less)</label><br>
-                <label><input type="radio" name="walks" value="medium"> Medium (30-60 minutes)</label><br>
-                <label><input type="radio" name="walks" value="long"> Long (60+ minutes)</label><br>
+                <label><input type="radio" name="walks" value="short"> 15-30 minutes</label><br>
+                <label><input type="radio" name="walks" value="medium"> 30-60 minutes</label><br>
+                <label><input type="radio" name="walks" value="long"> 1-2 hours</label><br>
+                <label><input type="radio" name="walks" value="verylong"> 2+ hours</label><br>
             </div>
 
             <div class="question">
                 <p>2. Do you prefer a small, medium, or large dog?</p>
-                <label><input type="radio" name="size" value="small"> Small</label><br>
-                <label><input type="radio" name="size" value="medium"> Medium</label><br>
-                <label><input type="radio" name="size" value="large"> Large</label><br>
+                <label><input type="radio" name="size" value="small"> Small (Chihuahua, Pug)</label><br>
+                <label><input type="radio" name="size" value="medium"> Medium (Beagle, Cocker Spaniel)</label><br>
+                <label><input type="radio" name="size" value="large"> Large (Golden Retriever, German Shepherd)</label><br>
             </div>
 
             <div class="question">
@@ -38,13 +39,28 @@
                 <p>4. What is your living situation?</p>
                 <label><input type="radio" name="living" value="apartment"> Apartment</label><br>
                 <label><input type="radio" name="living" value="house"> House with a yard</label><br>
+                <label><input type="radio" name="living" value="rural"> Rural area with land</label><br>
             </div>
 
             <div class="question">
                 <p>5. How much experience do you have with dogs?</p>
-                <label><input type="radio" name="experience" value="none"> None</label><br>
-                <label><input type="radio" name="experience" value="some"> Some</label><br>
-                <label><input type="radio" name="experience" value="lots"> Lots</label><br>
+                <label><input type="radio" name="experience" value="none"> First-time owner</label><br>
+                <label><input type="radio" name="experience" value="some"> Owned dogs before</label><br>
+                <label><input type="radio" name="experience" value="lots"> Professional experience</label><br>
+            </div>
+
+            <div class="question">
+                <p>6. What energy level are you looking for in a dog?</p>
+                <label><input type="radio" name="energy" value="low"> Low</label><br>
+                <label><input type="radio" name="energy" value="medium"> Medium</label><br>
+                <label><input type="radio" name="energy" value="high"> High</label><br>
+            </div>
+
+            <div class="question">
+                <p>7. What are your grooming preferences?</p>
+                <label><input type="radio" name="grooming" value="low"> Low maintenance</label><br>
+                <label><input type="radio" name="grooming" value="medium"> Medium maintenance</label><br>
+                <label><input type="radio" name="grooming" value="high"> High maintenance</label><br>
             </div>
 
             <button type="submit">Get Results</button>
