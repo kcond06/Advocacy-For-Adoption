@@ -1,5 +1,3 @@
-// puppy-quiz.js
-
 document.addEventListener('DOMContentLoaded', function() {
     const quizForm = document.getElementById('puppy-quiz');
     const resultsDiv = document.getElementById('quiz-results');
@@ -8,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
         quizForm.addEventListener('submit', function(event) {
             event.preventDefault();
 
-            // Gather all the answers from the form.
             const walks = document.querySelector('input[name="walks"]:checked')?.value;
             const size = document.querySelector('input[name="size"]:checked')?.value;
             const pets = document.querySelector('input[name="pets"]:checked')?.value;
@@ -22,40 +19,53 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            let score = 0;
+            const profileScores = {
+                companion: 0,
+                family: 0,
+                experienced: 0,
+            };
 
-            // Example score weighting
-            if (walks === 'short') score += 1;
-            else if (walks === 'medium') score += 2;
-            else if (walks === 'long') score += 3;
+            // Scoring system
+            if (size === 'small') profileScores.companion += 2;
+            else if (size === 'medium') profileScores.family += 1;
+            else if (size === 'large') profileScores.experienced += 2;
 
-            if (size === 'small') score += 1;
-            else if (size === 'medium') score += 2;
-            else if (size === 'large') score += 3;
+            if (energy === 'low') profileScores.companion += 2;
+            else if (energy === 'medium') profileScores.family += 2;
+            else if (energy === 'high') profileScores.experienced += 2;
 
-            if (pets === 'yes') score += 1;
-            if (living === 'house') score += 2;
+            if (grooming === 'low') profileScores.companion += 2;
+            else if (grooming === 'medium') profileScores.family += 1;
+            else if (grooming === 'high') profileScores.experienced += 2;
 
-            if (experience === 'lots') score += 2;
-            else if (experience === 'some') score += 1;
+            if (living === 'apartment') profileScores.companion += 2;
+            else if (living === 'house') profileScores.family += 2;
+            else if (living === 'rural') profileScores.experienced += 2;
 
-            if (energy === 'high') score += 3;
-            else if (energy === 'medium') score += 2;
-            else if (energy === 'low') score += 1;
+            if (pets === 'yes') profileScores.family += 2;
 
-            if (grooming === 'high') score += 3;
-            else if (grooming === 'medium') score += 2;
-            else if (grooming === 'low') score += 1;
+            if (experience === 'lots') profileScores.experienced += 2;
 
+            // Determine highest score
+            let bestProfile = '';
+            let highestScore = 0;
+
+            for (const profile in profileScores) {
+                if (profileScores[profile] > highestScore) {
+                    highestScore = profileScores[profile];
+                    bestProfile = profile;
+                }
+            }
+
+            // Generate results
             let result = '';
 
-            // More complex result logic
-            if (score >= 12) {
-                result = 'You need a high-energy, large dog such as a Border Collie or Australian Shepherd.';
-            } else if (score >= 8) {
-                result = 'You need a medium-sized, active dog such as a Beagle or Cocker Spaniel.';
-            } else {
-                result = 'You need a small, low-maintenance dog such as a Cavalier King Charles Spaniel or Shih Tzu.';
+            if (bestProfile === 'companion') {
+                result = 'You need a low-maintenance companion! Consider a Cavalier King Charles Spaniel or Shih Tzu.';
+            } else if (bestProfile === 'family') {
+                result = 'You need an active family dog! Consider a Labrador Retriever or Golden Retriever.';
+            } else if (bestProfile === 'experienced') {
+                result = 'You need a dog for experienced owners! Consider a Border Collie or German Shepherd.';
             }
 
             resultsDiv.innerHTML = `
