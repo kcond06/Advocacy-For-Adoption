@@ -201,7 +201,7 @@ footer {
 }
 
 .left-column, .right-column {
-    width: 200px; /* Check if this width is being applied */
+    width: 200px;
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 8px;
@@ -244,14 +244,16 @@ footer {
 }
 
 .featured-dog img {
-    max-width: 100%; /* Check if this is being applied */
-    height: auto;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
     border-radius: 5px;
     margin-bottom: 5px;
 }
 
 .social-links img {
-    width: 30px; /* Check if this is being applied */
-    height: 30px; /* Check if this is being applied */
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
     margin-right: 5px;
 }
