@@ -237,3 +237,21 @@ footer {
 .donate-button:hover {
     background-color: #e68a00;
 }
+
+/* New Styles for Expanded Side Content */
+.featured-dog {
+    margin-bottom: 15px;
+}
+
+.featured-dog img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
