@@ -198,6 +198,7 @@ footer {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
+    gap: 30px; /* Add gap between flex items */
 }
 
 .left-column, .right-column {
@@ -214,7 +215,7 @@ footer {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0 20px;
+    /* margin: 0 20px; Removed, using gap instead */
 }
 
 .home-banner {
